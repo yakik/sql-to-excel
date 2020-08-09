@@ -1,0 +1,48 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 15px 15px;
+  height: 100vh;
+}
+
+.header {
+  background-color: green;
+  grid-column: 1;
+  grid-row: 1;
+ 
+}
+
+.commits {
+  background-color: green;
+  grid-column: 1;
+  grid-row: 2 / span 3;
+  overflow: auto;
+}
+
+.diffs {
+  background-color: rgb(29, 162, 185);
+  grid-column: 1;
+  grid-row: 5 / span 6;
+  overflow: auto;
+}
+
+.source {
+  background-color: pink;
+  grid-column: 2;
+  grid-row: 1 / span 10;
+  overflow: auto;
+}
+
+.other {
+  background-color: rgb(10, 151, 34);
+  grid-column: 3;
+  grid-row: 1 / span 10;
+  overflow: auto;
+}
+
+.whiteSpace {
+  white-space:pre;
+}
+
+
